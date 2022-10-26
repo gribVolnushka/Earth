@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+}
+
+.earth-rotate {
+    padding-top: 10%;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.earth-rotate img {
+    position: relative;
+    width: 300px;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.moon-rotate img {
+    position: absolute;
+    top: 34%;
+    left: 37%;
+    width: 50px;
+    animation-name: moon;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 250px;
+
+}
+
+@keyframes moon {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+
+}
